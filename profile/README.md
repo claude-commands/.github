@@ -1,68 +1,75 @@
 # Claude Commands
 
-A collection of slash commands for [Claude Code](https://claude.ai/code) - Anthropic's CLI coding assistant.
+Slash commands for [Claude Code](https://claude.ai/code) - Anthropic's CLI coding assistant.
+
+## Getting Started
+
+Install the `/claude-commands` manager, then use it to discover and install everything else:
+
+```bash
+mkdir -p ~/projects/claude-commands ~/.claude/commands && \
+git clone git@github.com:claude-commands/command-claude-commands.git ~/projects/claude-commands/command-claude-commands && \
+ln -sf ~/projects/claude-commands/command-claude-commands/claude-commands.md ~/.claude/commands/claude-commands.md
+```
+
+Then run `/claude-commands` in Claude Code.
+
+### Why Start Here?
+
+The `/claude-commands` manager:
+- **Discovers** all available commands from this org automatically
+- **Installs** commands with proper symlinks in one step
+- **Updates** all your installed commands at once
+- **Removes** commands cleanly when you're done
+
+No need to manually track repos or remember installation steps for each command.
+
+### Managing Commands
+
+```
+/claude-commands              # Interactive menu
+/claude-commands install      # Install all or select specific commands
+/claude-commands add <name>   # Add a single command
+/claude-commands remove <name># Remove a command
+/claude-commands update       # Update all installed commands
+/claude-commands list         # Show what's installed vs available
+```
 
 ## Available Commands
 
-| Command | Description | Install |
-|---------|-------------|---------|
-| [command-add-feature](https://github.com/claude-commands/command-add-feature) | Implement features from GitHub issues with tests and PR | `/add-feature 123` |
-| [command-fix-issue](https://github.com/claude-commands/command-fix-issue) | Fix bugs using TDD workflow | `/fix-issue 456` |
-| [command-start-issue](https://github.com/claude-commands/command-start-issue) | Create git worktrees for issues | `/start-issue 789` |
-| [command-prune-worktree](https://github.com/claude-commands/command-prune-worktree) | Clean up completed worktrees | `/prune-worktree` |
-| [command-codex](https://github.com/claude-commands/command-codex) | Delegate tasks to OpenAI Codex CLI | `/codex <prompt>` |
+Browse the `command-*` repositories in this org, or run `/claude-commands list` to see descriptions.
 
-## Quick Start
+Commands are organized by workflow:
 
-```bash
-# Clone to your preferred location
-git clone git@github.com:claude-commands/command-add-feature.git <clone-path>/command-add-feature
+**Issue Workflow**
+- [command-start-issue](https://github.com/claude-commands/command-start-issue) - Create git worktrees for issues
+- [command-add-feature](https://github.com/claude-commands/command-add-feature) - Implement features with tests and PR
+- [command-fix-issue](https://github.com/claude-commands/command-fix-issue) - Fix bugs using TDD workflow
+- [command-prune-worktree](https://github.com/claude-commands/command-prune-worktree) - Clean up merged worktrees
 
-# Symlink (use full path to cloned repo)
-ln -s <clone-path>/command-add-feature/add-feature.md ~/.claude/commands/add-feature.md
-```
+**AI Delegation**
+- [command-codex](https://github.com/claude-commands/command-codex) - Delegate tasks to OpenAI Codex
 
-## Installation Pattern
-
-Each command is a separate repo you can clone and symlink:
-
-1. **Clone** the repo to your preferred location
-2. **Symlink** the `.md` file to `~/.claude/commands/`
-3. **Use** the command in Claude Code with `/{command-name}`
-
-## Updating Commands
-
-```bash
-# Update all commands (adjust path to your clone location)
-for dir in <clone-path>/command-*/; do
-  (cd "$dir" && git pull)
-done
-```
-
-## Configuration
-
-Some commands support configuration via environment variables:
-
-```bash
-# Set project prefix for worktree commands
-export WORKTREE_PREFIX="my-project"
-```
-
-See individual command READMEs for details.
+*More commands are being added regularly. Run `/claude-commands list` to see the latest.*
 
 ## Requirements
 
 - [Claude Code](https://claude.ai/code) CLI
-- `gh` CLI for GitHub integration
+- [GitHub CLI](https://cli.github.com/) (`gh`) - authenticated
 - Git
+
+## Manual Installation
+
+Prefer to install commands individually? See each repo's README for instructions.
 
 ## Contributing
 
-Want to add your own commands? Fork any command repo as a template, or create a new one following the pattern:
-
-- Repo name: `command-{name}`
+Create a new command following the pattern:
+- Repo: `command-{name}`
 - Main file: `{name}.md` with frontmatter
-- Include: `README.md` with installation and usage
+- Include: `README.md` with usage docs
+
+See the [Command Writing Guidelines](https://github.com/claude-commands/.github) for best practices.
 
 ---
 

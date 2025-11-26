@@ -2,6 +2,14 @@
 
 Slash commands for [Claude Code](https://claude.ai/code) - Anthropic's CLI coding assistant.
 
+## Philosophy
+
+**We hate typing. We hate confirming. We want AI that thinks like us and executes like it's us.**
+
+These commands exist to make Claude Code as automated as possible. Instead of explaining what you want step-by-step, just tell it what to do and let it run. The goal: Claude should know how you think and execute with the full power of AI.
+
+Less prompting. More doing.
+
 ## Getting Started
 
 Install the `/claude-commands` manager, then use it to discover and install everything else:
@@ -74,3 +82,7 @@ See the [Command Writing Guidelines](https://github.com/claude-commands/.github)
 ---
 
 Made with Claude Code
+
+---
+
+**Disclaimer:** This project is not affiliated with, endorsed by, or sponsored by Anthropic. We're just developers who love Claude Code and want to make it even more powerful. All trademarks belong to their respective owners.

@@ -45,7 +45,7 @@ No need to manually track repos or remember installation steps for each command.
 /claude-commands list         # Show what's installed vs available
 ```
 
-## Available Commands (38)
+## Available Commands (41)
 
 ### Issue & Git Workflow
 
@@ -59,6 +59,8 @@ No need to manually track repos or remember installation steps for each command.
 | [/merge-ready](https://github.com/claude-commands/command-merge-ready) | Find and merge PRs that are approved and passing CI |
 | [/rebase-all](https://github.com/claude-commands/command-rebase-all) | Rebase multiple branches onto a target branch |
 | [/cherry-pick-prs](https://github.com/claude-commands/command-cherry-pick-prs) | Cherry-pick commits from PRs to other branches |
+| [/hotfix](https://github.com/claude-commands/command-hotfix) | Create and manage hotfix branches with release workflow |
+| [/sync-fork](https://github.com/claude-commands/command-sync-fork) | Sync forked repository with upstream changes |
 
 ### Daily Workflow
 
@@ -96,6 +98,7 @@ No need to manually track repos or remember installation steps for each command.
 |---------|-------------|
 | [/scaffold](https://github.com/claude-commands/command-scaffold) | Generate project scaffolding following existing patterns |
 | [/convert](https://github.com/claude-commands/command-convert) | Convert between formats, languages, and data structures |
+| [/migration](https://github.com/claude-commands/command-migration) | Database migration helper with schema analysis |
 
 ### Documentation
 

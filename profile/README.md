@@ -15,30 +15,26 @@ A collection of slash commands for [Claude Code](https://claude.ai/code) - Anthr
 ## Quick Start
 
 ```bash
-# Create directory for commands
-mkdir -p ~/projects/claude-commands
+# Clone to your preferred location
+git clone git@github.com:claude-commands/command-add-feature.git <clone-path>/command-add-feature
 
-# Clone a command
-cd ~/projects/claude-commands
-git clone git@github.com:claude-commands/command-add-feature.git
-
-# Create symlink
-ln -s ~/projects/claude-commands/command-add-feature/add-feature.md ~/.claude/commands/add-feature.md
+# Symlink (use full path to cloned repo)
+ln -s <clone-path>/command-add-feature/add-feature.md ~/.claude/commands/add-feature.md
 ```
 
 ## Installation Pattern
 
 Each command is a separate repo you can clone and symlink:
 
-1. **Clone** the repo to `~/projects/claude-commands/`
+1. **Clone** the repo to your preferred location
 2. **Symlink** the `.md` file to `~/.claude/commands/`
 3. **Use** the command in Claude Code with `/{command-name}`
 
 ## Updating Commands
 
 ```bash
-# Update all commands at once
-for dir in ~/projects/claude-commands/command-*/; do
+# Update all commands (adjust path to your clone location)
+for dir in <clone-path>/command-*/; do
   (cd "$dir" && git pull)
 done
 ```

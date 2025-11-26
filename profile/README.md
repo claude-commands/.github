@@ -45,7 +45,7 @@ No need to manually track repos or remember installation steps for each command.
 /claude-commands list         # Show what's installed vs available
 ```
 
-## Available Commands (35)
+## Available Commands (38)
 
 ### Issue & Git Workflow
 
@@ -57,6 +57,8 @@ No need to manually track repos or remember installation steps for each command.
 | [/prune-worktree](https://github.com/claude-commands/command-prune-worktree) | Clean up merged worktrees |
 | [/branch-cleanup](https://github.com/claude-commands/command-branch-cleanup) | Clean stale and merged git branches |
 | [/merge-ready](https://github.com/claude-commands/command-merge-ready) | Find and merge PRs that are approved and passing CI |
+| [/rebase-all](https://github.com/claude-commands/command-rebase-all) | Rebase multiple branches onto a target branch |
+| [/cherry-pick-prs](https://github.com/claude-commands/command-cherry-pick-prs) | Cherry-pick commits from PRs to other branches |
 
 ### Daily Workflow
 
@@ -77,6 +79,7 @@ No need to manually track repos or remember installation steps for each command.
 | [/refactor](https://github.com/claude-commands/command-refactor) | AI-guided refactoring with safety checks |
 | [/dead-code](https://github.com/claude-commands/command-dead-code) | Find unused code, exports, and dependencies |
 | [/profile](https://github.com/claude-commands/command-profile) | Performance profiling and optimization suggestions |
+| [/explain-diff](https://github.com/claude-commands/command-explain-diff) | Explain changes between commits, branches, or files |
 
 ### Testing
 

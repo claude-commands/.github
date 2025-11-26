@@ -43,7 +43,7 @@ No need to manually track repos or remember installation steps for each command.
 /claude-commands list         # Show what's installed vs available
 ```
 
-## Available Commands (23)
+## Available Commands (27)
 
 ### Issue & Git Workflow
 
@@ -63,6 +63,7 @@ No need to manually track repos or remember installation steps for each command.
 | [/pr-summary](https://github.com/claude-commands/command-pr-summary) | Generate PR description from branch changes |
 | [/weekly-summary](https://github.com/claude-commands/command-weekly-summary) | Generate weekly work summary from git activity |
 | [/review-prs](https://github.com/claude-commands/command-review-prs) | Review PRs with AI-generated suggestions |
+| [/my-prs](https://github.com/claude-commands/command-my-prs) | Check status of your open PRs across repos |
 
 ### Code Quality & Analysis
 
@@ -81,6 +82,13 @@ No need to manually track repos or remember installation steps for each command.
 | [/test-coverage](https://github.com/claude-commands/command-test-coverage) | Analyze test coverage and generate missing tests |
 | [/failing-tests](https://github.com/claude-commands/command-failing-tests) | Debug and fix failing tests |
 
+### Documentation
+
+| Command | Description |
+|---------|-------------|
+| [/api-docs](https://github.com/claude-commands/command-api-docs) | Generate API documentation from code |
+| [/doc-sync](https://github.com/claude-commands/command-doc-sync) | Keep documentation in sync with code changes |
+
 ### Releases & Changelog
 
 | Command | Description |
@@ -95,11 +103,12 @@ No need to manually track repos or remember installation steps for each command.
 | [/security-scan](https://github.com/claude-commands/command-security-scan) | Security vulnerability assessment and secrets detection |
 | [/deps-check](https://github.com/claude-commands/command-deps-check) | Security, outdated, and unused dependency analysis |
 
-### Debugging
+### Debugging & Environment
 
 | Command | Description |
 |---------|-------------|
 | [/debug](https://github.com/claude-commands/command-debug) | Intelligent error analysis and resolution |
+| [/env-check](https://github.com/claude-commands/command-env-check) | Verify development environment setup |
 
 ### Onboarding & Context
 

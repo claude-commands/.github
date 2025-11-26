@@ -43,7 +43,7 @@ No need to manually track repos or remember installation steps for each command.
 /claude-commands list         # Show what's installed vs available
 ```
 
-## Available Commands (19)
+## Available Commands (23)
 
 ### Issue & Git Workflow
 
@@ -62,6 +62,7 @@ No need to manually track repos or remember installation steps for each command.
 | [/standup](https://github.com/claude-commands/command-standup) | Generate standup notes from git commits |
 | [/pr-summary](https://github.com/claude-commands/command-pr-summary) | Generate PR description from branch changes |
 | [/weekly-summary](https://github.com/claude-commands/command-weekly-summary) | Generate weekly work summary from git activity |
+| [/review-prs](https://github.com/claude-commands/command-review-prs) | Review PRs with AI-generated suggestions |
 
 ### Code Quality & Analysis
 
@@ -77,6 +78,8 @@ No need to manually track repos or remember installation steps for each command.
 | Command | Description |
 |---------|-------------|
 | [/test-gen](https://github.com/claude-commands/command-test-gen) | Generate comprehensive tests with edge cases |
+| [/test-coverage](https://github.com/claude-commands/command-test-coverage) | Analyze test coverage and generate missing tests |
+| [/failing-tests](https://github.com/claude-commands/command-failing-tests) | Debug and fix failing tests |
 
 ### Releases & Changelog
 
@@ -85,12 +88,18 @@ No need to manually track repos or remember installation steps for each command.
 | [/changelog](https://github.com/claude-commands/command-changelog) | Generate changelog from commits (Keep a Changelog format) |
 | [/release](https://github.com/claude-commands/command-release) | Prepare release with version bump and changelog |
 
-### Debugging & Dependencies
+### Security & Dependencies
+
+| Command | Description |
+|---------|-------------|
+| [/security-scan](https://github.com/claude-commands/command-security-scan) | Security vulnerability assessment and secrets detection |
+| [/deps-check](https://github.com/claude-commands/command-deps-check) | Security, outdated, and unused dependency analysis |
+
+### Debugging
 
 | Command | Description |
 |---------|-------------|
 | [/debug](https://github.com/claude-commands/command-debug) | Intelligent error analysis and resolution |
-| [/deps-check](https://github.com/claude-commands/command-deps-check) | Security, outdated, and unused dependency analysis |
 
 ### Onboarding & Context
 

@@ -15,9 +15,11 @@ Less prompting. More doing.
 Install the `/claude-commands` manager, then use it to discover and install everything else:
 
 ```bash
-mkdir -p ~/projects/claude-commands ~/.claude/commands && \
-git clone git@github.com:claude-commands/command-claude-commands.git ~/projects/claude-commands/command-claude-commands && \
-ln -sf ~/projects/claude-commands/command-claude-commands/claude-commands.md ~/.claude/commands/claude-commands.md
+# Clone to your preferred location
+git clone git@github.com:claude-commands/command-claude-commands.git <clone-path>/command-claude-commands
+
+# Symlink (use full path to cloned repo)
+ln -s <clone-path>/command-claude-commands/claude-commands.md ~/.claude/commands/claude-commands.md
 ```
 
 Then run `/claude-commands` in Claude Code.
@@ -142,9 +144,11 @@ No need to manually track repos or remember installation steps for each command.
 Prefer to install commands individually? Each repo includes installation instructions:
 
 ```bash
-# Example: Install /standup
-git clone git@github.com:claude-commands/command-standup.git ~/projects/claude-commands/command-standup
-ln -sf ~/projects/claude-commands/command-standup/standup.md ~/.claude/commands/standup.md
+# Clone to your preferred location
+git clone git@github.com:claude-commands/command-standup.git <clone-path>/command-standup
+
+# Symlink (use full path to cloned repo)
+ln -s <clone-path>/command-standup/standup.md ~/.claude/commands/standup.md
 ```
 
 ## Contributing

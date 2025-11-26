@@ -45,7 +45,7 @@ No need to manually track repos or remember installation steps for each command.
 /claude-commands list         # Show what's installed vs available
 ```
 
-## Available Commands (31)
+## Available Commands (35)
 
 ### Issue & Git Workflow
 
@@ -76,6 +76,7 @@ No need to manually track repos or remember installation steps for each command.
 | [/tech-debt](https://github.com/claude-commands/command-tech-debt) | Analyze codebase for technical debt and complexity |
 | [/refactor](https://github.com/claude-commands/command-refactor) | AI-guided refactoring with safety checks |
 | [/dead-code](https://github.com/claude-commands/command-dead-code) | Find unused code, exports, and dependencies |
+| [/profile](https://github.com/claude-commands/command-profile) | Performance profiling and optimization suggestions |
 
 ### Testing
 
@@ -91,6 +92,7 @@ No need to manually track repos or remember installation steps for each command.
 | Command | Description |
 |---------|-------------|
 | [/scaffold](https://github.com/claude-commands/command-scaffold) | Generate project scaffolding following existing patterns |
+| [/convert](https://github.com/claude-commands/command-convert) | Convert between formats, languages, and data structures |
 
 ### Documentation
 
@@ -112,6 +114,7 @@ No need to manually track repos or remember installation steps for each command.
 |---------|-------------|
 | [/security-scan](https://github.com/claude-commands/command-security-scan) | Security vulnerability assessment and secrets detection |
 | [/deps-check](https://github.com/claude-commands/command-deps-check) | Security, outdated, and unused dependency analysis |
+| [/deps-upgrade](https://github.com/claude-commands/command-deps-upgrade) | Intelligent dependency upgrades with breaking change analysis |
 
 ### Debugging & Environment
 
@@ -119,6 +122,7 @@ No need to manually track repos or remember installation steps for each command.
 |---------|-------------|
 | [/debug](https://github.com/claude-commands/command-debug) | Intelligent error analysis and resolution |
 | [/env-check](https://github.com/claude-commands/command-env-check) | Verify development environment setup |
+| [/logs](https://github.com/claude-commands/command-logs) | Analyze log files for issues and patterns |
 
 ### Onboarding & Context
 

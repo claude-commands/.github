@@ -1,0 +1,72 @@
+# Claude Commands
+
+A collection of slash commands for [Claude Code](https://claude.ai/code) - Anthropic's CLI coding assistant.
+
+## Available Commands
+
+| Command | Description | Install |
+|---------|-------------|---------|
+| [command-add-feature](https://github.com/claude-commands/command-add-feature) | Implement features from GitHub issues with tests and PR | `/add-feature 123` |
+| [command-fix-issue](https://github.com/claude-commands/command-fix-issue) | Fix bugs using TDD workflow | `/fix-issue 456` |
+| [command-start-issue](https://github.com/claude-commands/command-start-issue) | Create git worktrees for issues | `/start-issue 789` |
+| [command-prune-worktree](https://github.com/claude-commands/command-prune-worktree) | Clean up completed worktrees | `/prune-worktree` |
+
+## Quick Start
+
+```bash
+# Create directory for commands
+mkdir -p ~/projects/claude-commands
+
+# Clone a command
+cd ~/projects/claude-commands
+git clone git@github.com:claude-commands/command-add-feature.git
+
+# Create symlink
+ln -s ~/projects/claude-commands/command-add-feature/add-feature.md ~/.claude/commands/add-feature.md
+```
+
+## Installation Pattern
+
+Each command is a separate repo you can clone and symlink:
+
+1. **Clone** the repo to `~/projects/claude-commands/`
+2. **Symlink** the `.md` file to `~/.claude/commands/`
+3. **Use** the command in Claude Code with `/{command-name}`
+
+## Updating Commands
+
+```bash
+# Update all commands at once
+for dir in ~/projects/claude-commands/command-*/; do
+  (cd "$dir" && git pull)
+done
+```
+
+## Configuration
+
+Some commands support configuration via environment variables:
+
+```bash
+# Set project prefix for worktree commands
+export WORKTREE_PREFIX="my-project"
+```
+
+See individual command READMEs for details.
+
+## Requirements
+
+- [Claude Code](https://claude.ai/code) CLI
+- `gh` CLI for GitHub integration
+- Git
+
+## Contributing
+
+Want to add your own commands? Fork any command repo as a template, or create a new one following the pattern:
+
+- Repo name: `command-{name}`
+- Main file: `{name}.md` with frontmatter
+- Include: `README.md` with installation and usage
+
+---
+
+Made with Claude Code

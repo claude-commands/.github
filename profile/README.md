@@ -6,7 +6,9 @@ Slash commands for [Claude Code](https://claude.ai/code) - Anthropic's CLI codin
 
 **We hate typing. We hate confirming. We want AI that thinks like us and executes like it's us.**
 
-These commands exist to make Claude Code as automated as possible. Instead of explaining what you want step-by-step, just tell it what to do and let it run. The goal: Claude should know how you think and execute with the full power of AI.
+These commands exist to make Claude Code as automated as possible. Instead of explaining what you want
+step-by-step, just tell it what to do and let it run. The goal: Claude should know how you think and
+execute with the full power of AI.
 
 Less prompting. More doing.
 
@@ -27,6 +29,7 @@ Then run `/claude-commands` in Claude Code.
 ### Why Start Here?
 
 The `/claude-commands` manager:
+
 - **Discovers** all available commands from this org automatically
 - **Installs** commands with proper symlinks in one step
 - **Updates** all your installed commands at once
@@ -36,7 +39,7 @@ No need to manually track repos or remember installation steps for each command.
 
 ### Managing Commands
 
-```
+```text
 /claude-commands              # Interactive menu
 /claude-commands install      # Install all or select specific commands
 /claude-commands add <name>   # Add a single command
@@ -175,6 +178,7 @@ ln -s <clone-path>/command-standup/standup.md ~/.claude/commands/standup.md
 ## Contributing
 
 Create a new command following the pattern:
+
 - Repo: `command-{name}`
 - Main file: `{name}.md` with frontmatter
 - Include: `README.md` with usage docs
@@ -188,4 +192,6 @@ Made with Claude Code
 
 ---
 
-**Disclaimer:** This project is not affiliated with, endorsed by, or sponsored by Anthropic. We're just developers who love Claude Code and want to make it even more powerful. All trademarks belong to their respective owners.
+**Disclaimer:** This project is not affiliated with, endorsed by, or sponsored by Anthropic. We're just
+developers who love Claude Code and want to make it even more powerful. All trademarks belong to their
+respective owners.

@@ -43,7 +43,7 @@ No need to manually track repos or remember installation steps for each command.
 /claude-commands list         # Show what's installed vs available
 ```
 
-## Available Commands (27)
+## Available Commands (31)
 
 ### Issue & Git Workflow
 
@@ -54,6 +54,7 @@ No need to manually track repos or remember installation steps for each command.
 | [/fix-issue](https://github.com/claude-commands/command-fix-issue) | Fix bugs using TDD workflow |
 | [/prune-worktree](https://github.com/claude-commands/command-prune-worktree) | Clean up merged worktrees |
 | [/branch-cleanup](https://github.com/claude-commands/command-branch-cleanup) | Clean stale and merged git branches |
+| [/merge-ready](https://github.com/claude-commands/command-merge-ready) | Find and merge PRs that are approved and passing CI |
 
 ### Daily Workflow
 
@@ -81,6 +82,13 @@ No need to manually track repos or remember installation steps for each command.
 | [/test-gen](https://github.com/claude-commands/command-test-gen) | Generate comprehensive tests with edge cases |
 | [/test-coverage](https://github.com/claude-commands/command-test-coverage) | Analyze test coverage and generate missing tests |
 | [/failing-tests](https://github.com/claude-commands/command-failing-tests) | Debug and fix failing tests |
+| [/mock-data](https://github.com/claude-commands/command-mock-data) | Generate realistic test data from types or schemas |
+
+### Code Generation
+
+| Command | Description |
+|---------|-------------|
+| [/scaffold](https://github.com/claude-commands/command-scaffold) | Generate project scaffolding following existing patterns |
 
 ### Documentation
 
@@ -115,6 +123,7 @@ No need to manually track repos or remember installation steps for each command.
 | Command | Description |
 |---------|-------------|
 | [/onboard](https://github.com/claude-commands/command-onboard) | Quick project onboarding and architecture overview |
+| [/context-dump](https://github.com/claude-commands/command-context-dump) | Save and restore working context for later sessions |
 
 ### AI Delegation
 

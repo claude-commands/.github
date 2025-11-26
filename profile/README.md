@@ -45,7 +45,7 @@ No need to manually track repos or remember installation steps for each command.
 /claude-commands list         # Show what's installed vs available
 ```
 
-## Available Commands (44)
+## Available Commands (47)
 
 ### Issue & Git Workflow
 
@@ -72,6 +72,7 @@ No need to manually track repos or remember installation steps for each command.
 | [/review-prs](https://github.com/claude-commands/command-review-prs) | Review PRs with AI-generated suggestions |
 | [/my-prs](https://github.com/claude-commands/command-my-prs) | Check status of your open PRs across repos |
 | [/git-stats](https://github.com/claude-commands/command-git-stats) | Git repository statistics and insights |
+| [/suggest-reviewers](https://github.com/claude-commands/command-suggest-reviewers) | Suggest reviewers based on code ownership and expertise |
 
 ### Code Quality & Analysis
 
@@ -139,6 +140,13 @@ No need to manually track repos or remember installation steps for each command.
 |---------|-------------|
 | [/onboard](https://github.com/claude-commands/command-onboard) | Quick project onboarding and architecture overview |
 | [/context-dump](https://github.com/claude-commands/command-context-dump) | Save and restore working context for later sessions |
+
+### Project Setup
+
+| Command | Description |
+|---------|-------------|
+| [/init-project](https://github.com/claude-commands/command-init-project) | Initialize new project with best practices |
+| [/add-ci](https://github.com/claude-commands/command-add-ci) | Add CI/CD configuration to existing project |
 
 ### AI Delegation
 

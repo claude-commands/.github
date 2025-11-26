@@ -43,22 +43,66 @@ No need to manually track repos or remember installation steps for each command.
 /claude-commands list         # Show what's installed vs available
 ```
 
-## Available Commands
+## Available Commands (19)
 
-Browse the `command-*` repositories in this org, or run `/claude-commands list` to see descriptions.
+### Issue & Git Workflow
 
-Commands are organized by workflow:
+| Command | Description |
+|---------|-------------|
+| [/start-issue](https://github.com/claude-commands/command-start-issue) | Create git worktrees for GitHub issues |
+| [/add-feature](https://github.com/claude-commands/command-add-feature) | Implement features from issues with tests and PR |
+| [/fix-issue](https://github.com/claude-commands/command-fix-issue) | Fix bugs using TDD workflow |
+| [/prune-worktree](https://github.com/claude-commands/command-prune-worktree) | Clean up merged worktrees |
+| [/branch-cleanup](https://github.com/claude-commands/command-branch-cleanup) | Clean stale and merged git branches |
 
-**Issue Workflow**
-- [command-start-issue](https://github.com/claude-commands/command-start-issue) - Create git worktrees for issues
-- [command-add-feature](https://github.com/claude-commands/command-add-feature) - Implement features with tests and PR
-- [command-fix-issue](https://github.com/claude-commands/command-fix-issue) - Fix bugs using TDD workflow
-- [command-prune-worktree](https://github.com/claude-commands/command-prune-worktree) - Clean up merged worktrees
+### Daily Workflow
 
-**AI Delegation**
-- [command-codex](https://github.com/claude-commands/command-codex) - Delegate tasks to OpenAI Codex
+| Command | Description |
+|---------|-------------|
+| [/standup](https://github.com/claude-commands/command-standup) | Generate standup notes from git commits |
+| [/pr-summary](https://github.com/claude-commands/command-pr-summary) | Generate PR description from branch changes |
+| [/weekly-summary](https://github.com/claude-commands/command-weekly-summary) | Generate weekly work summary from git activity |
 
-*More commands are being added regularly. Run `/claude-commands list` to see the latest.*
+### Code Quality & Analysis
+
+| Command | Description |
+|---------|-------------|
+| [/explain](https://github.com/claude-commands/command-explain) | Deep-dive code explanation with Mermaid diagrams |
+| [/tech-debt](https://github.com/claude-commands/command-tech-debt) | Analyze codebase for technical debt and complexity |
+| [/refactor](https://github.com/claude-commands/command-refactor) | AI-guided refactoring with safety checks |
+| [/dead-code](https://github.com/claude-commands/command-dead-code) | Find unused code, exports, and dependencies |
+
+### Testing
+
+| Command | Description |
+|---------|-------------|
+| [/test-gen](https://github.com/claude-commands/command-test-gen) | Generate comprehensive tests with edge cases |
+
+### Releases & Changelog
+
+| Command | Description |
+|---------|-------------|
+| [/changelog](https://github.com/claude-commands/command-changelog) | Generate changelog from commits (Keep a Changelog format) |
+| [/release](https://github.com/claude-commands/command-release) | Prepare release with version bump and changelog |
+
+### Debugging & Dependencies
+
+| Command | Description |
+|---------|-------------|
+| [/debug](https://github.com/claude-commands/command-debug) | Intelligent error analysis and resolution |
+| [/deps-check](https://github.com/claude-commands/command-deps-check) | Security, outdated, and unused dependency analysis |
+
+### Onboarding & Context
+
+| Command | Description |
+|---------|-------------|
+| [/onboard](https://github.com/claude-commands/command-onboard) | Quick project onboarding and architecture overview |
+
+### AI Delegation
+
+| Command | Description |
+|---------|-------------|
+| [/codex](https://github.com/claude-commands/command-codex) | Delegate tasks to OpenAI Codex CLI |
 
 ## Requirements
 
@@ -68,7 +112,13 @@ Commands are organized by workflow:
 
 ## Manual Installation
 
-Prefer to install commands individually? See each repo's README for instructions.
+Prefer to install commands individually? Each repo includes installation instructions:
+
+```bash
+# Example: Install /standup
+git clone git@github.com:claude-commands/command-standup.git ~/projects/claude-commands/command-standup
+ln -sf ~/projects/claude-commands/command-standup/standup.md ~/.claude/commands/standup.md
+```
 
 ## Contributing
 
@@ -76,6 +126,7 @@ Create a new command following the pattern:
 - Repo: `command-{name}`
 - Main file: `{name}.md` with frontmatter
 - Include: `README.md` with usage docs
+- Model: Always use `claude-opus-4-5-20251101`
 
 See the [Command Writing Guidelines](https://github.com/claude-commands/.github) for best practices.
 

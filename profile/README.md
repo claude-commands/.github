@@ -45,7 +45,7 @@ No need to manually track repos or remember installation steps for each command.
 /claude-commands list         # Show what's installed vs available
 ```
 
-## Available Commands (41)
+## Available Commands (44)
 
 ### Issue & Git Workflow
 
@@ -71,6 +71,7 @@ No need to manually track repos or remember installation steps for each command.
 | [/weekly-summary](https://github.com/claude-commands/command-weekly-summary) | Generate weekly work summary from git activity |
 | [/review-prs](https://github.com/claude-commands/command-review-prs) | Review PRs with AI-generated suggestions |
 | [/my-prs](https://github.com/claude-commands/command-my-prs) | Check status of your open PRs across repos |
+| [/git-stats](https://github.com/claude-commands/command-git-stats) | Git repository statistics and insights |
 
 ### Code Quality & Analysis
 
@@ -82,6 +83,8 @@ No need to manually track repos or remember installation steps for each command.
 | [/dead-code](https://github.com/claude-commands/command-dead-code) | Find unused code, exports, and dependencies |
 | [/profile](https://github.com/claude-commands/command-profile) | Performance profiling and optimization suggestions |
 | [/explain-diff](https://github.com/claude-commands/command-explain-diff) | Explain changes between commits, branches, or files |
+| [/lint-fix](https://github.com/claude-commands/command-lint-fix) | Auto-fix linting issues across the codebase |
+| [/todo-scan](https://github.com/claude-commands/command-todo-scan) | Find and track TODO/FIXME comments in codebase |
 
 ### Testing
 

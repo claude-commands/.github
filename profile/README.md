@@ -10,6 +10,7 @@ A collection of slash commands for [Claude Code](https://claude.ai/code) - Anthr
 | [command-fix-issue](https://github.com/claude-commands/command-fix-issue) | Fix bugs using TDD workflow | `/fix-issue 456` |
 | [command-start-issue](https://github.com/claude-commands/command-start-issue) | Create git worktrees for issues | `/start-issue 789` |
 | [command-prune-worktree](https://github.com/claude-commands/command-prune-worktree) | Clean up completed worktrees | `/prune-worktree` |
+| [command-codex](https://github.com/claude-commands/command-codex) | Delegate tasks to OpenAI Codex CLI | `/codex <prompt>` |
 
 ## Quick Start
 

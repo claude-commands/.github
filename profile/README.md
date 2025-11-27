@@ -58,6 +58,25 @@ No need to manually track repos or remember installation steps for each command.
 
 Commands are cloned once and symlinked to user or project level. Updates apply everywhere.
 
+## Create Your Own Commands
+
+Want to build a command for your workflow? Use `/create-command` to scaffold it interactively:
+
+```text
+/create-command
+```
+
+The wizard will:
+
+1. **Ask what you're building** - Choose from presets (Git Workflow, Code Analysis, etc.) or go custom
+2. **Gather details** - Name, description, arguments, integrations needed
+3. **Research best practices** - Searches the web for current patterns in your domain
+4. **Generate files** - Creates properly structured `command-{name}/` with all the right patterns
+5. **Help you publish** - Optionally init git, push to GitHub, and create a PR to add it here
+
+Your command becomes available to everyone in the org. See the
+[Command Writing Guidelines](COMMAND_GUIDELINES.md) for the full reference.
+
 ## Available Commands (48)
 
 ### Issue & Git Workflow

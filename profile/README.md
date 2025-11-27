@@ -46,9 +46,19 @@ No need to manually track repos or remember installation steps for each command.
 /claude-commands remove <name># Remove a command
 /claude-commands update       # Update all installed commands
 /claude-commands list         # Show what's installed vs available
+/claude-commands move <name>  # Move between user and project levels
 ```
 
-## Available Commands (47)
+**Installation Scopes:**
+
+| Scope | Flag | Location | Availability |
+|-------|------|----------|--------------|
+| User | `--user` | `~/.claude/commands/` | All projects (default) |
+| Project | `--project` | `./.claude/commands/` | Current project only |
+
+Commands are cloned once and symlinked to user or project level. Updates apply everywhere.
+
+## Available Commands (48)
 
 ### Issue & Git Workflow
 
@@ -157,6 +167,12 @@ No need to manually track repos or remember installation steps for each command.
 |---------|-------------|
 | [/codex](https://github.com/claude-commands/command-codex) | Delegate tasks to OpenAI Codex CLI |
 
+### Command Development
+
+| Command | Description |
+|---------|-------------|
+| [/create-command](https://github.com/claude-commands/command-create-command) | Interactively create new slash commands with best practices |
+
 ## Requirements
 
 - [Claude Code](https://claude.ai/code) CLI
@@ -177,14 +193,25 @@ ln -s <clone-path>/command-standup/standup.md ~/.claude/commands/standup.md
 
 ## Contributing
 
-Create a new command following the pattern:
+**Recommended:** Use `/create-command` to scaffold new commands interactively. It will:
+
+- Guide you through naming, description, and tool selection
+- Research best practices for your command type
+- Generate properly structured files following org patterns
+- Optionally set up git and push to GitHub
+
+```text
+/create-command    # Start the interactive wizard
+```
+
+Or create manually following the pattern:
 
 - Repo: `command-{name}`
 - Main file: `{name}.md` with frontmatter
 - Include: `README.md` with usage docs
 - Model: Always use `claude-opus-4-5-20251101`
 
-See the [Command Writing Guidelines](https://github.com/claude-commands/.github) for best practices.
+See the [Command Writing Guidelines](COMMAND_GUIDELINES.md) for best practices.
 
 ---
 

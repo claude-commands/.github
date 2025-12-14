@@ -14,7 +14,17 @@ Less prompting. More doing.
 
 ## Getting Started
 
-Install the `/claude-commands` manager, then use it to discover and install everything else:
+### AI-Assisted Setup (Recommended)
+
+Paste this into Claude Code and it will walk you through the setup:
+
+```text
+Install claude-commands for me. Ask where to clone (suggest ~/projects/claude-commands),
+try SSH then HTTPS if needed, and symlink to ~/.claude/commands/. Then tell me to run
+/claude-commands.
+```
+
+### Manual Setup
 
 ```bash
 # Clone to your preferred location

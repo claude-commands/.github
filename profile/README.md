@@ -19,9 +19,15 @@ Less prompting. More doing.
 Paste this into Claude Code and it will walk you through the setup:
 
 ```text
-Install claude-commands for me. Ask where to clone (suggest ~/projects/claude-commands),
-try SSH then HTTPS if needed, and symlink to ~/.claude/commands/. Then tell me to run
-/claude-commands.
+Install the claude-commands manager for me:
+
+1. Ask where I want to clone repos (suggest ~/projects/claude-commands)
+2. Clone github.com/claude-commands/command-claude-commands to that location
+   (try SSH first: git@github.com:claude-commands/command-claude-commands.git,
+   fall back to HTTPS if SSH fails)
+3. Create ~/.claude/commands/ directory if it doesn't exist
+4. Symlink: ln -s <clone-path>/command-claude-commands/claude-commands.md ~/.claude/commands/claude-commands.md
+5. Tell me to run /claude-commands to install more commands
 ```
 
 ### Manual Setup

@@ -1,4 +1,24 @@
-# Claude Commands
+> [!CAUTION]
+> ## This repository is deprecated
+>
+> **Claude Code now supports plugins**, which provide a better installation and update experience.
+>
+> **Use the new plugin marketplace instead:**
+>
+> ```bash
+> /plugin marketplace add gopherguides/gopher-ai
+> /plugin install go-workflow@gopher-ai
+> /plugin install go-dev@gopher-ai
+> /plugin install productivity@gopher-ai
+> ```
+>
+> **New repo:** [github.com/gopherguides/gopher-ai](https://github.com/gopherguides/gopher-ai)
+>
+> The commands below are no longer maintained. Please migrate to the plugin versions.
+
+---
+
+# Claude Commands (Deprecated)
 
 Slash commands for [Claude Code](https://claude.ai/code) - Anthropic's CLI coding assistant.
 
